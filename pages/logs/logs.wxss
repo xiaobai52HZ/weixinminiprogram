@@ -1,0 +1,125 @@
+.flex-wrp{
+  margin-top: 60rpx;
+  display:flex;
+}
+.flex-item{
+  width: auto;
+  height: auto;
+  background-color: blueviolet;
+  /* font-size: 26rpx; */
+}
+.flex-item-V{
+  margin: 0 auto;
+  width: 300rpx;
+  height: 200rpx;
+}
+.demo-text-1{
+  /* position: relative; */
+  /* align-items: center;
+  justify-content: center; */
+  background-color: #aa1caf;
+  color: #eae7ebe7;
+  border-color: rgb(220, 216, 224);
+  border:1px solid;
+  font-size: 40rpx;
+  font-family: "楷体";
+}
+.demo-text-1:before{
+  content: '在“一天时间表”中输入首先进行回车点击后，在点击“+”进行小计划记录；在“小记录”中可以记录自己一天的心情变化、感受、所见所闻、知识获取，这样晚上睡觉就可以收获满满安心休息啦！';
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.demo-text-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #2782D7;
+  color: #e0dddd;
+  font-size: 20rpx;
+}
+.demo-text-2:before{
+  content: 'no feeling';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #f59a54;
+  color: #ffffff;
+  font-size: 20rpx;
+}
+.demo-text-3:before{
+  content: 'sad';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+.log-item {
+  background-color: #c1aedd;
+  font-size:12px;
+  font-family:"楷体";
+  margin: 5rpx;
+}
+
+
+page {
+  background-color: #f1f1f1;
+ }
+ 
+ .inputRoom {
+  width: 100vw;
+  height: 16vw;
+  border-top: 1px solid #cdcdcd;
+  background-color: #f1f1f1;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+ }
+ 
+ input {
+  width: 76vw;
+  height: 9.33vw;
+  background-color: #fff;
+  border-radius: 40rpx;
+  margin-left: 2vw;
+  padding: 0 3vw;
+  font-size: 28rpx;
+  color: #444;
+ }
+ 
+ .leftMsg {
+  font-size: 35rpx;
+  color: #444;
+  line-height: 7vw;
+  padding: 2vw 2.5vw;
+  background-color: #fff;
+  margin-left: -1.6vw;
+  border-radius: 10rpx;
+  z-index: 10;
+ }
+ 
+ .rightMsg {
+  font-size: 35rpx;
+  color: #444;
+  line-height: 7vw;
+  padding: 2vw 2.5vw;
+  background-color: #96EB6A;
+  margin-right: -1.6vw;
+  border-radius: 10rpx;
+  z-index: 10;
+ }

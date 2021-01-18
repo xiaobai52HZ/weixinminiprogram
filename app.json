@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor":"#333",
+    "navigationBarBackgroundColor": "#5B2384",
+    "navigationBarTitleText": "美眉的记录小程序",
+    "navigationBarTextStyle":"white"
+   
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#0000FF",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+          "pagePath": "pages/index/index",
+     
+          "text":"一天时间表",
+          "iconPath": "/static/tabBarimage/1.png",
+          "selectedIconPath": "/static/tabBarimage/11.png"
+
+      },
+      {
+        "pagePath": "pages/logs/logs",
+     
+        "text":"使用须知+小记录",
+
+        "iconPath":"/static/tabBarimage/2.png",
+        "selectedIconPath": "/static/tabBarimage/22.png"
+      }
+    ],
+    "position": "bottom"
+    },
+    "networkTimeout": {
+      "request": 10000
+    },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

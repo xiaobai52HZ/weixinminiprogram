@@ -1,0 +1,144 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="timebar">
+    
+    <view class="containerindex">{{recordTime[0]}}
+
+    </view>
+    <view class="cdisply">
+    <view class="timeinput"><input maxlength="13" bindblur="bindKeyInput" value="{{inputValue}}"  placeholder="请输入你的小目标"  placeholder-style="color:purple" />
+    <button class="timebutton" size="mini" bindtap="operateInput" >＋</button>
+    </view>
+    <view class="planning">
+    <text >小标记规则</text>
+    <view class="ruler">
+      <label >
+        <checkbox  color="purple" value="cb" checked="true" />未完成
+      </label>
+      <label >
+        <checkbox color="purple" value="cb" />已完成
+      </label>
+    </view>
+      
+
+  
+
+      <text>计划记录表</text>
+
+        <checkbox-group bindchange="checkboxChange">
+          <label wx:for="{{items}}" wx:key="{{item.value}}">
+            <view class="checkbox">
+              <checkbox color="purple" disabled="{{item.disabled}}" value="{{item.value}}"  checked="{{item.checked}}"/>
+            {{item.name}}</view>
+            <picker mode="time" value="{{item.time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+              <view class="picker">
+                  截止时间: {{item.time}}
+              </view>
+            </picker>
+          </label>
+        </checkbox-group>
+     
+  </view>
+</view>
+</view>
+
+<view class="timebar">
+    
+    <view class="containerindex">{{recordTime[1]}}
+
+    </view>
+    <view class="cdisply">
+    <!-- <view class="timeinput"><input maxlength="13" bindblur="bindKeyInput" value="{{inputValue}}"  placeholder="请输入你的小目标"  placeholder-style="color:purple" /> -->
+    <view class="timeinput"><input maxlength="13" bindconfirm="bindKeyInput" value="{{inputValue}}"  placeholder="请输入你的小目标"  placeholder-style="color:purple" /> 
+    <button class="timebutton" size="mini" bindtap="operateInputt" >＋</button>
+    </view>
+    <view class="planning">
+    <text >小标记规则</text>
+    <view class="ruler">
+      <label >
+        <checkbox  color="purple" value="cb" checked="true" />未完成
+      </label>
+      <label >
+        <checkbox color="purple" value="cb" />已完成
+      </label>
+    </view>
+      
+
+  
+
+      <text>计划记录表</text>
+
+        <checkbox-group bindchange="checkboxChange">
+          <label wx:for="{{itemss}}" wx:key="{{item.value}}">
+            <view class="checkbox">
+              <checkbox color="purple" disabled="{{item.disabled}}" value="{{item.value}}"  checked="{{item.checked}}"/>
+            {{item.name}}</view>
+            <picker mode="time" value="{{item.time}}" start="00:00" end="23:59" bindchange="bindTimeChange2">
+              <view class="picker">
+                  截止时间: {{item.time}}
+              </view>
+            </picker>
+          </label>
+        </checkbox-group>
+     
+  </view>
+</view>
+</view>
+
+
+
+<view class="timebar">
+    
+    <view class="containerindex">{{recordTime[2]}}
+
+    </view>
+    <view class="cdisply">
+    <view class="timeinput"><input maxlength="13" bindblur="bindKeyInput" value="{{inputValue}}"  placeholder="请输入你的小目标"  placeholder-style="color:purple" />
+    <button class="timebutton" size="mini" bindtap="operateInputtt" >＋</button>
+    </view>
+    <view class="planning">
+    <text >小标记规则</text>
+    <view class="ruler">
+      <label >
+        <checkbox  color="purple" value="cb" checked="true" />未完成
+      </label>
+      <label >
+        <checkbox color="purple" value="cb" />已完成
+      </label>
+    </view>
+      
+
+  
+
+      <text>计划记录表</text>
+
+        <checkbox-group bindchange="checkboxChange">
+          <label wx:for="{{itemsss}}" wx:key="{{item.value}}">
+            <view class="checkbox">
+              <checkbox color="purple" disabled="{{item.disabled}}" value="{{item.value}}"  checked="{{item.checked}}"/>
+            {{item.name}}</view>
+            <picker mode="time" value="{{item.time}}" start="00:00" end="23:59" bindchange="bindTimeChange3">
+              <view class="picker">
+                  截止时间: {{item.time}}
+              </view>
+            </picker>
+          </label>
+        </checkbox-group>
+     
+  </view>
+</view>
+</view>
+<text style="color:white" >舒缓时刻</text>
+
+
+<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls='false' loop='false' bindpause="audioPause"></audio>
+<!-- <button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button> -->
+<view class="playtime">
+<button class="timebutton" size="mini" bindtap="audioPlay">播放</button>
+<button class="timebutton" size="mini" bindtap="audioPause">暂停</button> 
+<button class="timebutton" size="mini" bindtap="audio14">14秒</button>
+<button class="timebutton" size="mini" bindtap="audioStart">开头</button>
+</view>
+</view>
